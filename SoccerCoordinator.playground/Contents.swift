@@ -152,6 +152,8 @@ for index in 0...dragrons.count - 1 {
     
     let letter = "Hello \(guardiansName), We would like to inform you that \(playerName) is in the team of the dragons and his first training is on March 17 at 1pm. We would like to invite you to attend to his first practice. Thanks in advance"
     
+    print(letter)
+    
     dragonsLettersArray.append(letter)
 }
 
@@ -166,6 +168,8 @@ for index in 0...sharks.count - 1 {
     
     let letter = "Hello \(guardiansName), We would like to inform you that \(playerName) is in the team of the shark and his first training is on March 17 at 3pm. We would like to invite you to attend to his first practice. Thanks in advance"
     
+    print(letter)
+    
     sharksLettersArray.append(letter)
 }
 
@@ -178,12 +182,14 @@ for index in 0...raptors.count - 1 {
     let guardiansName = raptors[index]["Guardian"]
     
     let letter = "Hello \(guardiansName), We would like to inform you that \(playerName) is in the team of the raptors and his first training is on March 18 at 1pm. We would like to invite you to attend to his first practice. Thanks in advance"
+
+    print(letter)
     
     raptorsLettersArray.append(letter)
 }
 
 
-raptorsLettersArray[0]
+raptorsLettersArray[2]
 sharksLettersArray[0]
 dragonsLettersArray[0]
 
