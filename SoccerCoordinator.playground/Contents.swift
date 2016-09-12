@@ -82,18 +82,12 @@ for index in 0...(playersArray.count - 1){
     if(player["Soccer Experience"] == "YES"){
     
         if(teamIterator == 1){
-            
             dragrons.append(player)
-            
         }else{
             if(teamIterator == 2){
-                
                 sharks.append(player)
-                
             }else{
-                
                 raptors.append(player)
-                
             }
         }
         
@@ -115,18 +109,12 @@ for index in 0...(playersArray.count - 1){
     if(player["Soccer Experience"] == "NO"){
         
         if(teamIterator == 1){
-            
             dragrons.append(player)
-            
         }else{
             if(teamIterator == 2){
-                
                 sharks.append(player)
-                
             }else{
-                
                 raptors.append(player)
-                
             }
         }
         
@@ -150,7 +138,7 @@ for index in 0...dragrons.count - 1 {
     let playerName = dragrons[index]["Name"]
     let guardiansName = dragrons[index]["Guardian"]
     
-    let letter = "Hello \(guardiansName), We would like to inform you that \(playerName) is in the team of the dragons and his first training is on March 17 at 1pm. We would like to invite you to attend to his first practice. Thanks in advance"
+    let letter = "Hello \(guardiansName!), We would like to inform you that \(playerName!) is in the team of the dragons and his first training is on March 17 at 1pm. We would like to invite you to attend to his first practice. Thanks in advance"
     
     print(letter)
     
@@ -166,7 +154,7 @@ for index in 0...sharks.count - 1 {
     let playerName = sharks[index]["Name"]
     let guardiansName = sharks[index]["Guardian"]
     
-    let letter = "Hello \(guardiansName), We would like to inform you that \(playerName) is in the team of the shark and his first training is on March 17 at 3pm. We would like to invite you to attend to his first practice. Thanks in advance"
+    let letter = "Hello \(guardiansName!), We would like to inform you that \(playerName!) is in the team of the shark and his first training is on March 17 at 3pm. We would like to invite you to attend to his first practice. Thanks in advance"
     
     print(letter)
     
@@ -181,7 +169,7 @@ for index in 0...raptors.count - 1 {
     let playerName = raptors[index]["Name"]
     let guardiansName = raptors[index]["Guardian"]
     
-    let letter = "Hello \(guardiansName), We would like to inform you that \(playerName) is in the team of the raptors and his first training is on March 18 at 1pm. We would like to invite you to attend to his first practice. Thanks in advance"
+    let letter = "Hello \(guardiansName!), We would like to inform you that \(playerName!) is in the team of the raptors and his first training is on March 18 at 1pm. We would like to invite you to attend to his first practice. Thanks in advance"
 
     print(letter)
     
@@ -189,7 +177,7 @@ for index in 0...raptors.count - 1 {
 }
 
 
-raptorsLettersArray[2]
+print(raptorsLettersArray[2])
 sharksLettersArray[0]
 dragonsLettersArray[0]
 
